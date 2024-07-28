@@ -52,7 +52,7 @@ local originalSettings = {
 	AtmosphereDecay = atmosphere.Decay
 }
 
--- Function to ensure value exists
+
 local function ensureValueExists(parent, name, valueType, defaultValue)
 	local value = parent:FindFirstChild(name)
 	if not value then
@@ -159,7 +159,7 @@ end
 
 local function updateCelestialBodies(skipSunIntensityUpdate, skipSunTextureUpdate, skipUpdate, eclipseOngoing)
 	if eclipseOngoing then
-		return -- Skip updating sun texture and intensity during eclipses
+		return 
 	end
 
 	local time = Lighting.ClockTime
@@ -269,8 +269,7 @@ local function resetEclipseEffects()
 	applyRareOccurrenceSettings(originalSettings)
 	rareOccurrenceStringValue.Value = "None"
 	eclipseOngoing = false
-	eclipseOccurred.Value = true -- Set flag to indicate an eclipse has occurred
-	-- Set chances to 0 to prevent future eclipses
+	eclipseOccurred.Value = true 
 	solarEclipseChance = 0
 	lunarEclipseChance = 0
 	totalEclipseChance = 0
@@ -390,7 +389,7 @@ while true do
 		end
 	end
 
-	-- Convert minutes to seconds and wait for the duration of the current phase
+	
 	local waitTime = currentPhase.minutes * 60 -- Convert minutes to seconds
 	debugPrint("Phase duration: " .. waitTime .. " seconds")
 	for i = 1, waitTime do
@@ -399,9 +398,9 @@ while true do
 		task.wait(1)  -- Wait for 1 second
 	end
 
-	-- Reset the sun texture after the night ends
+	
 	if currentPhase.name == "Night" then
-		moonPhaseSet = false  -- Allow new moon phase to be set for the next night cycle
+		moonPhaseSet = false  
 		debugPrint("Moon texture maintained after night phase")
 	end
 
