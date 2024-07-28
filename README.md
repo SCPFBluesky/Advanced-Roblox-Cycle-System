@@ -1,2 +1,3 @@
-If you are here to change stuff please make your own fork with your own changes.
-If not please download the RBXM file
+Feel free to fork the RBXM and make any changes to your liking.
+Please also make sure you have a vaild skybox named "Sky" and a Sunrays named "SunRays" else the system will error and will not work properly.
+Highly customizable.
