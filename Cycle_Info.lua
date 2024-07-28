@@ -1,19 +1,3 @@
---[[ Info Bank:
-   Minutes: How much minutes a phase will last before transitioning into the next phase, it will be converted into seconds in the cycle script.
-   targetClockTime = The clock time the phase will set the lighting clokc time to.
-   targetFogEnd = The fog end the phase will set the lighting fog end to.
-   targetBrightness = The brightness the phase will set the lighting brightness to.
-   targetAmbient = The ambient the phase will set the lighting ambient to.
-    atmosphereDensity = The density the phase will set the atmosphere density to.
-   atmosphereOffset = The offset the phase will set the atmosphere offset to.
-   atmosphereColor = The color the phase will set the atmosphere color to.
-   atmosphereDecay = The decay the phase will set the atmosphere decay to.
-   targetSunRayIntensity = The sun ray intensity the phase will set the lighting sun ray intensity to.
-   targetExposureCompensation = The exposure compensation the phase will set the lighting exposure compensation to.
-   moonPhases table = list of decals that will change the moon too each night it is radnomized feel free to change to whatever you like but i'd recommend you leave it to my uploaded decals.
-   if you want the moon texture to be just one you can just disable enablemoonphases and change the id to your desired moon picture or just change all of them to the desired moon picture.
-  ]]
-
 local Cycle_Info = {}
 
 Cycle_Info.lookup = {
@@ -142,7 +126,7 @@ Cycle_Info.moonPhases = {
 Cycle_Info.RareOccurrences = {
 	SolarEclipse = "rbxassetid://18433675007",
 	LunarEclipse = "rbxassetid://13713200424",
-	TotalEclipse = "rbxassetid://18433972178"
+	TotalEclipse = "rbxassetid://18433972178" 
 }
 
 Cycle_Info.Textures = {
@@ -174,6 +158,7 @@ Cycle_Info.RareOccurrenceSettings = {
 		Ambient = Color3.fromRGB(0, 0, 0),
 		AtmosphereDensity = 0.7,
 		AtmosphereOffset = 0.1,
+		ExposureCompensation = -5,
 		AtmosphereColor = Color3.fromRGB(0, 0, 0),
 		AtmosphereDecay = Color3.fromRGB(50, 50, 50)
 	}
