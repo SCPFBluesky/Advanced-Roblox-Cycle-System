@@ -5,14 +5,6 @@ Highly customizable.
 
 Contributors:
 
-
-
-
-
+https://create.roblox.com/store/asset/18466750809/Advanced-Cycle-system
 AbnormallyCursed
-
-
-
-
-
 https://science.nasa.gov/moon/moon-phases/  - Moon Phase Pictures
